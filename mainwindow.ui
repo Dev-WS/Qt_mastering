@@ -14,10 +14,10 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="addTaskButton">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>500</x>
       <y>160</y>
       <width>75</width>
       <height>23</height>
@@ -25,6 +25,19 @@
     </property>
     <property name="text">
      <string>Add Task</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusLabel">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>150</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status 0 todo/0 done</string>
     </property>
    </widget>
   </widget>
