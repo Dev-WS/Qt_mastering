@@ -12,6 +12,18 @@ class Task : public QWidget
 {
     Q_OBJECT
 
+public slots:
+
+    void rename();
+
+signals:
+    void removed(Task* task);
+    void statusChanged(Task* task);
+
+private slots:
+    void checked(bool checked);
+
+
 public:
     explicit Task(const QString& name, QWidget *parent = nullptr);
     ~Task();
