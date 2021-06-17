@@ -5,12 +5,8 @@
 class SysInfo
 {
 public:
-    //SysInfo();
-
     static SysInfo& instance();
-
     virtual ~SysInfo();
-
 
     virtual void init() = 0;
     virtual double cpuLoadAverage() = 0;
@@ -21,7 +17,7 @@ protected:
 
 private:
     SysInfo(const SysInfo& rhs);
-    SysInfo& operator = (const SysInfo& rhs);
+    SysInfo& operator=(const SysInfo& rhs);
 };
 
 #endif // SYSINFO_H

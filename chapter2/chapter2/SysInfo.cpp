@@ -1,12 +1,12 @@
-#include "sysinfo.h"
+#include "SysInfo.h"
 #include <QtGlobal>
 
-#include "sysinfowindowsimp1.h"
+#include "SysInfowindowsImpl.h"
 
 SysInfo& SysInfo::instance()
 {
 
-    static SysInfoWindowsImp1 singleton;
+    static SysInfoWindowsImpl singleton;
     return singleton;
 }
 
